@@ -22,9 +22,9 @@ onTap: defaultTargetPlatform == TargetPlatform.android
 
 ### Exemplo
 
-https://user-images.githubusercontent.com/19857523/178768112-ae0aef5e-7138-4f7a-938b-06c424bb9fb3.mp4
+[Navegação Android (Material)](https://user-images.githubusercontent.com/19857523/178768112-ae0aef5e-7138-4f7a-938b-06c424bb9fb3.mp4)
 
-[record.webm](https://user-images.githubusercontent.com/19857523/178768189-a251f1c1-8ef9-4289-92e3-aba464eccd76.webm)
+[Navegação iOS (Cupertino)](https://user-images.githubusercontent.com/19857523/178768189-a251f1c1-8ef9-4289-92e3-aba464eccd76.webm)
 
 ## Widgets Adaptive
 
