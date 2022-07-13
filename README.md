@@ -20,7 +20,7 @@ onTap: defaultTargetPlatform == TargetPlatform.android
                         ),
 ```
 
-### Exemplo
+### Resultado
 
 [Navegação Android (Material)](https://user-images.githubusercontent.com/19857523/178768803-ae895d08-ba90-44ce-bd4c-bcccae992e49.webm)
 
@@ -40,7 +40,7 @@ Switch.adaptive(activeColor: Colors.blue,
                 onChanged: (bool value) {}),
 ```
 
-### Exemplo
+### Resultado
 
 ![adaptive_android](assets/adaptive_android.png) 
 
@@ -62,7 +62,7 @@ defaultTargetPlatform == TargetPlatform.android
                   ),
 ```
 
-### Exemplo
+### Resultado
 
 ![icons_android](assets/icons_android.png)
 
