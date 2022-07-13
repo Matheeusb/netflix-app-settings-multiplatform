@@ -1,16 +1,51 @@
-# netflix_adaptive
+# Netflix - App Settings - UI Adaptative
 
-A new Flutter project.
+Esse projeto tem como objetivo apresentar técnicas para personalização do app de acordo com a plataforma (Android e iOS).
 
-## Getting Started
+## Navegação Personalizada
 
-This project is a starting point for a Flutter application.
+Para realizar a navegação padrão de cada guideline (Material e Cupertino), podemos utilizar o MaterialPageRoute e o CupertinoPageRoute.
 
-A few resources to get you started if this is your first Flutter project:
+```dart
+onTap: defaultTargetPlatform == TargetPlatform.android
+                    ? () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (final _) => const VideoQualityPage()),
+                        )
+                    : () => Navigator.push(
+                          context,
+                          CupertinoPageRoute(
+                              builder: (final _) => const VideoQualityPage()),
+                        ),
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Widgets Adaptive
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Alguns widgets possuem o contrutor adaptive, que automaticamente ajustam a sua apresentação conforme a plataforma.
+
+```dart
+Icon(Icons.adaptive.arrow_back)
+```
+
+```dart
+Switch.adaptive(activeColor: Colors.blue,
+                value: true,
+                onChanged: (bool value) {}),
+```
+
+## Ícones Personalizados
+
+Ao criar um projeto Flutter, a dependência cupertino_icons é adicionada automaticamente. Com ela podemos apresentar o icone correspondente a plataforma.
+
+```dart
+defaultTargetPlatform == TargetPlatform.android
+                ? const Icon(
+                    Icons.check,
+                    color: Colors.blue,
+                  )
+                : const Icon(
+                    CupertinoIcons.check_mark,
+                    color: Colors.blue,
+                  ),
+```
