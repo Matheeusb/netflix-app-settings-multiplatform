@@ -20,6 +20,12 @@ onTap: defaultTargetPlatform == TargetPlatform.android
                         ),
 ```
 
+### Exemplo
+
+![record_android](assets/record_android.webm)
+
+![record_ios](assets/record_ios.webm)
+
 ## Widgets Adaptive
 
 Alguns widgets possuem o contrutor adaptive, que automaticamente ajustam a sua apresentação conforme a plataforma.
@@ -33,6 +39,12 @@ Switch.adaptive(activeColor: Colors.blue,
                 value: true,
                 onChanged: (bool value) {}),
 ```
+
+### Exemplo
+
+![adaptive_android](assets/adaptive_android.png) 
+
+![adaptive_ios](assets/adaptive_ios.png)
 
 ## Ícones Personalizados
 
@@ -49,3 +61,9 @@ defaultTargetPlatform == TargetPlatform.android
                     color: Colors.blue,
                   ),
 ```
+
+### Exemplo
+
+![icons_android](assets/icons_android.png)
+
+![icons_ios](assets/icons_ios.png)
